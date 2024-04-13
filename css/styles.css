@@ -89,7 +89,6 @@ ul {
 .upper-menu:hover,
 .upper-menu:focus {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts {
   font-style: normal;
@@ -113,7 +112,6 @@ ul {
 .contacts-info:hover,
 .contacts-info:focus {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Section 1 */
 .visually-hidden {
@@ -194,7 +192,6 @@ h1 {
 .button:hover,
 .button:focus {
   background-color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Section 2 */
 .section-adv {
@@ -248,7 +245,7 @@ img {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 .soc-link-items {
   width: 40px;
@@ -352,7 +349,6 @@ img {
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover .overlay-text {
   transform: translateY(0);
@@ -476,7 +472,6 @@ img {
 .footer-icon:hover,
 .footer-icon:focus {
   background-color: #31d0aa;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-container-logo {
   margin-right: 120px;
@@ -486,9 +481,7 @@ img {
   align-items: baseline;
 }
 .subscribe-container {
-  width: 453px;
-  height: 80px;
-  margin-left: 80px;
+  margin-left: auto;
 }
 .subscribe-title {
   display: block;
@@ -573,8 +566,8 @@ img {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  pointer-events: none;
   visibility: hidden;
+  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -741,6 +734,9 @@ img {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+.checkbox-checked:focus + .checkbox-label > .modal-icon-checkbox {
+  border-color: #4d5ae5;
 }
 
 .privacy-policy {
